@@ -1,0 +1,37 @@
+.pai {
+    border: 1px solid black;
+    width: 98%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.filho {
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.vermelho {
+    background-color: rgb(230, 44, 44);
+    order: -1;
+}
+
+.verde {
+    background-color: rgb(33, 217, 33);
+    order: -2;
+}
+
+.amarelo {
+    background-color: rgb(231, 231, 52);
+}
+
+.azul {
+    background-color: rgb(77, 77, 199);
+}
