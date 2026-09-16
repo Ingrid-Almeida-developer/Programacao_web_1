@@ -1,0 +1,10 @@
+.caixa {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    border: 2px solid blue;
+}
+
+p {
+    font-size: 40px;
+}
