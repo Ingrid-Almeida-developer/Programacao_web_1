@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <hgroup>
+            <h1>Portal de Referência HTML5</h1>
+            <p>Um exemplo abrangente contendo todas as tags semânticas da especificação W3C/WHATWG.</p>
+        </hgroup>
+        <search>
+            <form action="/busca" method="get">
+                <label for="campo-busca">Buscar no portal:</label>
+                <input type="search" id="campo-busca" name="q" placeholder="Digite uma tag (ex: article)...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </search>
+        <nav>
+            <h2>Navegação Rápida</h2>
+            <ul>
+                <li><a href="#artigo-principal">Artigo Principal</a></li>
+                <li><a href="#midia-interativa">Mídia e Elementos Embutidos</a></li>
+                <li><a href="#tabela-dados">Tabela Semântica</a></li>
+                <li><a href="#formularios">Formulários e Controles</a></li>
+                <li><a href="#glossario">Glossário e Agrupamento</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="d_whats">
+            <p class="p_whats"><strong>W</strong></p>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section id="artigo-principal">
+            <h2>1. Artigo de Destaque sobre Semântica Web</h2>
+            <article>
+                <header>
+                    <h3>A Evolução da Marcação Web: Do HTML4 ao HTML5</h3>
+                    <p>
+                        Escrito por <strong>Ana Silva</strong> em 
+                        <time datetime="2026-09-23T10:00:00Z">23 de Setembro de 2026</time>
+                    </p>
+                </header>
+                <p> 
+                    A semântica web permite que browsers, leitores de tela e robôs de busca compreendam o 
+                    <em>significado real</em> das informações. Diferente do uso excessivo de elementos genéricos como o 
+                    <span>&lt;span&gt;</span> ou o <div>&lt;div&gt;</div> (que devem ser usados exclusivamente quando nenhum elemento semântico fizer sentido), 
+                    o HTML5 introduziu tags estruturais focadas no contexto.
+                </p>
+                <p>
+                    Ao criar um site, é <strong>extremamente importante</strong> priorizar acessibilidade. 
+                    Por exemplo, o conceito de <dfn>HTML Semântico</dfn> refere-se à escolha correta de tags baseada no significado e não na aparência. 
+                    A sigla <abbr title="World Wide Web Consortium">W3C</abbr> orienta esses padrões. 
+                    O preço do curso era <s>R$ 200,00</s>, mas agora custa <mark>R$ 99,00</mark> (código do produto: <data value="PRD-1029">PRD-1029</data>).
+                    <small>*Promoção por tempo limitado até <time datetime="2026-12-31">31/12/2026</time>.</small>
+                </p>
+                <blockquote cite="https://www.w3.org/TR/html52/">
+                    <p>
+                        "A Web foi projetada para funcionar para todas as pessoas, independentemente do hardware, software, idioma, local ou capacidade."
+                    </p>
+                    <footer>— Tim Berners-Lee em <cite>Especificações W3C</cite></footer>
+                </blockquote>
+                <p>
+                    Como nos lembra o famoso ditado: <q>A simplicidade é o último grau de sofisticação</q>.
+                </p>
+                <h4>Exemplo de Código e Comando de Terminal</h4>
+                <p>
+                    Para salvar as alterações no terminal, digite <kbd>git commit -m "update"</kbd> e pressione <kbd>Enter</kbd>.<br>
+                    A variável <var>x</var> deve armazenar o resultado da função <code>calcular()</code>.
+                </p>
+                <p>Saída do programa:</p>
+                <pre><code><samp>
+[INFO] Inicializando servidor...
+[SUCCESS] Servidor rodando na porta 8080!
+                </samp></code></pre>
+                <p>
+                    A fórmula química da água é H<sub>2</sub>O, enquanto 10<sup>2</sup> é igual a 100.<br>
+                    Uso de termos em outro idioma: <i>User Experience (UX)</i>.<br>
+                    Destaque visual sem peso de importância: <b>Texto em Negrito Ortográfico</b>.<br>
+                    Aviso com sublinhado: <u>Atenção ao prazo final</u>.<br>
+                    Palavra muito longa com sugestão de quebra: Supercalifragilisticexpialidocious<wbr>webdevelopment.<br>
+                    Exemplo de isolamento bidirecional: Usuário <bdi>ar_user_99</bdi> enviou uma mensagem.<br>
+                    Inversão manual de direção de texto (RTL): <bdo dir="rtl">Este texto será exibido invertido.</bdo>
+                </p>
+                <p>
+                    Anotação de pronúncia em caracteres asiáticos (Kanji): 
+                    <ruby>
+                        漢 <rp>(</rp><rt>かん</rt><rp>)</rp>
+                        字 <rp>(</rp><rt>じ</rt><rp>)</rp>
+                    </ruby>
+                </p>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="https://placehold.co/800x300/4a5568/ffffff?text=Banner+Desktop+Sem%C3%A2ntico">
+                        <source media="(min-width: 400px)" srcset="https://placehold.co/500x250/718096/ffffff?text=Banner+Tablet+Sem%C3%A2ntico">
+                        <img src="https://placehold.co/300x150/a0aec0/ffffff?text=Banner+Mobile" alt="Ilustração do layout da página semântica" usemap="#mapa-imagem">
+                    </picture>
+                    <map name="mapa-imagem">
+                        <area shape="rect" coords="0,0,150,150" href="https://developer.mozilla.org" alt="MDN Docs" target="_blank">
+                    </map>
+                    <figcaption>Figura 1: Exemplo de elemento picture responsivo com mapa de imagem clicável incorporado.</figcaption>
+                </figure>
+                <footer>
+                    <p>Categorias do artigo: <a href="/tecnologia">Tecnologia</a>, <a href="/web">Web Development</a></p>
+                </footer>
+            </article>
+            <aside>
+                <h3>Informações Correlatas</h3>
+                <p>Você sabia? A inclusão correta de elementos semânticos reduz a necessidade de atributos de acessibilidade ARIA redundantes.</p>
+                <h4>Sobre a Autora</h4>
+                <address>
+                    E-mail de contato: <a href="mailto:ana.silva@exemplo.com">ana.silva@exemplo.com</a><br>
+                    Endereço físico: Av. Paulista, 1000 - São Paulo, SP - Brasil
+                </address>
+            </aside>
+        </section>
+        <hr>
+        <section id="glossario">
+            <h2>2. Estruturas de Agrupamento de Conteúdo e Listas</h2>
+            <h3>Lista Ordenada (<ol>) com itens (<li>)</h3>
+            <ol>
+                <li>Planejar a estrutura do documento.</li>
+                <li>Escolher as tags semânticas adequadas.</li>
+                <li>Validar o código no W3C Validator.</li>
+            </ol>
+            <h3>Lista Não-Ordenada (<ul>)</h3>
+            <ul>
+                <li>Navegadores Modernos</li>
+                <li>Leitores de Tela (Acessibilidade)</li>
+                <li>Indexadores de Motores de Busca (SEO)</li>
+            </ul>
+            <h3>Lista de Definições (<dl>, <dt>, <dd>)</h3>
+            <dl>
+                <dt><dfn>HTML</dfn></dt>
+                <dd>Linguagem de Marcação de Hipertexto utilizada para estruturar a web.</dd>
+                <dt><dfn>DOM</dfn></dt>
+                <dd>Modelo de Objeto do Documento, representação em árvore do HTML na memória do navegador.</dd>
+            </dl>
+        </section>
+        <hr>
+        <section id="midia-interativa">
+            <h2>3. Mídia Semântica e Conteúdo Embutido</h2>
+            <article>
+                <h3>Reprodutor de Áudio Naitvo (<audio>, <source>, <track>)</h3>
+                <audio controls preload="metadata">
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    <track kind="captions" src="legendas_audio.vtt" srclang="pt" label="Português">
+                    Seu navegador não suporta a tag de áudio nativa.
+                </audio>
+                <h3>Reprodutor de Vídeo Nativo (<video>, <source>, <track>)</h3>
+                <video controls width="320" height="240" poster="https://placehold.co/320x240/000000/ffffff?text=Poster+do+Video">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    <track kind="subtitles" src="legendas_video.vtt" srclang="pt" label="Legendas em Português" default>
+                    Seu navegador não suporta a exibição de vídeos em HTML5.
+                </video>
+                <h3>Documentos Embutidos e Quadros (<iframe>, <object>, <embed>)</h3>
+                <h4>IFrame (Quadro Inline)</h4>
+                <iframe src="about:blank" title="Exemplo de iFrame interno" width="300" height="150"></iframe>
+                <h4>Object (Conteúdo Externo Genérico)</h4>
+                <object data="https://placehold.co/200x100/cccccc/000000?text=Object+Data" type="image/png" width="200" height="100">
+                    <p>Sua plataforma não possui suporte para este recurso.</p>
+                </object>
+                <h4>Embed (Ponto de Inserção de Aplicação Externa)</h4>
+                <embed type="image/svg+xml" src="https://placehold.co/200x100/000000/ffffff.svg?text=Embed+SVG" width="200" height="100">
+            </article>
+        </section>
+        <hr>
+        <section id="tabela-dados">
+            <h2>4. Tabela Estruturada de Dados</h2>
+            <table>
+                <caption>Tabela 1: Comparativo de Suporte e Uso de Tags Semânticas</caption>
+                <colgroup>
+                    <col span="1">
+                    <col span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria da Tag</th>
+                        <th scope="col">Exemplo de Tag</th>
+                        <th scope="col">Finalidade Semântica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estrutura</td>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td>Unidade autônoma de conteúdo (post, notícia).</td>
+                    </tr>
+                    <tr>
+                        <td>Interação</td>
+                        <td><code>&lt;details&gt;</code></td>
+                        <td>Widget expansível com informações ocultas/visíveis.</td>
+                    </tr>
+                    <tr>
+                        <td>Mídia</td>
+                        <td><code>&lt;figure&gt;</code></td>
+                        <td>Encapsula imagens, código ou diagramas com legenda.</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Total de Categorias Exibidas</th>
+                        <td>3 Categorias Explicativas</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+        <section id="formularios">
+            <h2>5. Formulários Semânticos, Medidores e Elementos Interativos</h2>
+            <h3>Painel Expansível Nativo (<details>, <summary>)</h3>
+            <details>
+                <summary>Clique para expandir/revelar termos de uso</summary>
+                <p>Estes são os termos do site exibidos sem a necessidade de scripts ou estilização CSS.</p>
+            </details>
+            <h3>Caixa de Diálogo Nativa (<dialog>)</h3>
+            <dialog open>
+                <p>Aviso: Esta janela modal é nativa do HTML5 utilizando a tag <code>&lt;dialog open&gt;</code>.</p>
+            </dialog>
+            <h3>Medidores e Progresso Nativos (<meter>, <progress>)</h3>
+            <p>
+                Espaço em disco ocupado (<meter>): 
+                <meter value="0.75" min="0" max="1" low="0.3" high="0.8" optimum="0.5">75%</meter> (75%)
+            </p>
+            <p>
+                Progresso da Operação (<progress>): 
+                <progress value="60" max="100">60%</progress> (60%)
+            </p>
+            <h3>Formulário de Cadastro e Feedback</h3>
+            <form action="/enviar" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" required autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">E-mail de Contato:</label><br>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="navegador-preferido">Navegador Principal (Datalist):</label><br>
+                        <input list="navegadores" id="navegador-preferido" name="navegador">
+                        <datalist id="navegadores">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Safari">
+                            <option value="Edge">
+                            <option value="Opera">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Opções e Seleção</legend>
+                    <p>
+                        <label for="categoria">Categoria Profissional:</label><br>
+                        <select id="categoria" name="categoria">
+                            <optgroup label="Desenvolvimento">
+                                <option value="frontend">Desenvolvedor Front-end</option>
+                                <option value="backend">Desenvolvedor Back-end</option>
+                                <option value="fullstack">Desenvolvedor Full-stack</option>
+                            </optgroup>
+                            <optgroup label="Design & Conteúdo">
+                                <option value="ux">Designer UX/UI</option>
+                                <option value="redator">Redator Técnico</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensagem">Comentários / Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Escreva aqui sua mensagem..."></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Cálculo em Tempo Real Nativo (<output>)</legend>
+                    <p>
+                        <label for="num1">Valor A:</label>
+                        <input type="number" id="num1" name="num1" value="10"> 
+                        + 
+                        <label for="num2">Valor B:</label>
+                        <input type="number" id="num2" name="num2" value="15"> 
+                        = 
+                        <output name="resultado" for="num1 num2">25</output>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Enviar Formulário</button>
+                    <button type="reset">Limpar Campos</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; <time datetime="2026">2026</time> Guia de Referência Semântica HTML5. 
+            Todos os direitos reservados.
+        </p>
+        <p>
+            <small>Este documento cumpre 100% os padrões do W3C para HTML5 PURO, sem estilos nem scripts acoplados.</small>
+        </p>
+    </footer>
+</body>
+</html>
