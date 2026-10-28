@@ -1,0 +1,12 @@
+#div1 {
+    height: 60px;
+    width: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div1 p {
+    text-align: center;
+}
